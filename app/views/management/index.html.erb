@@ -1,0 +1,56 @@
+<h1>Management</h1>
+
+<h3>Users</h3>
+<table border="1" style="width:100%">
+	<tbody>
+		<th>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Age</td>
+		</th>
+		<% @users.each do |user| %>
+		<tr>
+			<td><%= user.id %></td>
+			<td><%= user.name %></td>
+			<td><%= user.email %></td>
+			<td><%= user.age %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<hr>
+
+<h3>Cats</h3>
+<table border="1" style="width:100%">
+	<tbody>
+		<th>
+			<td>Name</td>
+		</th>
+		<% @cats.each do |cat| %>
+		<tr>
+			<td><%= cat.id %></td>
+			<td><%= cat.name %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<hr>
+
+<h3>Todos</h3>
+<table border="1" style="width:100%">
+	<tbody>
+		<th>
+			<td>Tasks</td>
+			<td>Finished</td>
+		</th>
+		<% @todos.each do |todo| %>
+		<tr>
+			<td><%= todo.id %></td>
+			<td><%= todo.tasks %></td>
+			<td><%= todo.finished %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
